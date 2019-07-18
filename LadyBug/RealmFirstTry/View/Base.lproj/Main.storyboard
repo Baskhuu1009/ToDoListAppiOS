@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MtV-cP-8Bl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ySm-SD-HwX">
+            <objects>
+                <navigationController id="MtV-cP-8Bl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bqt-jw-msu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GA5-QN-jjo" kind="relationship" relationship="rootViewController" id="5kH-mM-xhy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLF-J4-8yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2444" y="-394"/>
+        </scene>
+        <!--Top Page View Controller-->
+        <scene sceneID="nEB-Nr-xYl">
+            <objects>
+                <viewController id="GA5-QN-jjo" customClass="TopPageViewController" customModule="RealmFirstTry" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tTN-Kb-iO2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ8-Os-Exn">
+                                <rect key="frame" x="118" y="405" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ユーザ情報管理画面"/>
+                                <connections>
+                                    <segue destination="1oI-Eu-QiY" kind="show" id="zMu-g6-CdY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Sc-im-WY0">
+                                <rect key="frame" x="72" y="193" width="241" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ようこそ天道虫アプリ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycM-2b-L3N">
+                                <rect key="frame" x="76" y="125" width="223" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-vJ-AvF">
+                                <rect key="frame" x="133" y="477" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="アプリについて"/>
+                                <connections>
+                                    <segue destination="smF-C7-dlt" kind="show" id="0oZ-DC-5Eu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LAR-yi-yJZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2d2-Ae-ntk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxQ-9e-MMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192.8000000000002" y="-394.45277361319341"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="47S-M4-eIx">
+            <objects>
+                <viewController id="smF-C7-dlt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Sh-Cy-Y5n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天道虫アプリについて" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9H-dT-6Hb">
+                                <rect key="frame" x="77" y="136" width="220" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="複数なアプリケーションをご利用している方々にユーザー名とパスワードを管理しやすくするための本アプリの目的である" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QbR-Vt-cU4">
+                                <rect key="frame" x="67" y="269" width="230" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gs0-Zd-Les"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYb-23-BD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192.8000000000002" y="357.57121439280365"/>
+        </scene>
+        <!--Todoリスト-->
+        <scene sceneID="XtA-iT-cAU">
+            <objects>
+                <viewController title="Todoリスト" id="1oI-Eu-QiY" customClass="UserInfoViewController" customModule="RealmFirstTry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PCY-Zb-0k9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5K-KT-EOp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="oneAccount" textLabel="uKN-KA-9Uo" style="IBUITableViewCellStyleDefault" id="yra-zB-D1X">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yra-zB-D1X" id="VPK-TV-ppq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uKN-KA-9Uo">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1oI-Eu-QiY" id="7aq-QN-ZAM"/>
+                                    <outlet property="delegate" destination="1oI-Eu-QiY" id="YCX-Dk-nZk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d5K-KT-EOp" firstAttribute="trailing" secondItem="rpY-tw-4Rj" secondAttribute="trailing" id="0Uq-Tp-Zzk"/>
+                            <constraint firstItem="d5K-KT-EOp" firstAttribute="bottom" secondItem="rpY-tw-4Rj" secondAttribute="bottom" id="bNY-V6-5QR"/>
+                            <constraint firstItem="d5K-KT-EOp" firstAttribute="leading" secondItem="rpY-tw-4Rj" secondAttribute="leading" id="fM5-yd-Bpy"/>
+                            <constraint firstItem="d5K-KT-EOp" firstAttribute="top" secondItem="rpY-tw-4Rj" secondAttribute="top" id="oSe-1h-n4W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rpY-tw-4Rj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="アカウント情報一覧" id="fru-bA-JlC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="w9s-zr-1tq">
+                            <connections>
+                                <action selector="addTapped:" destination="1oI-Eu-QiY" id="sQm-1d-nqT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="d5K-KT-EOp" id="BRz-BR-04D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhU-lY-BBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3953" y="-394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="225" height="225"/>
+    </resources>
+</document>
